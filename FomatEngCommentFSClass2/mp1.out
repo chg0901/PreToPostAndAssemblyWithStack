@@ -1,0 +1,83 @@
+---------------------------------------------------------------------------------------------
+(A+B*C)/(D-E)-(F+G*H+I-J)-K/L*M/N+Q=>ABC*+DE-/FGH*+I+J--KL/M*N/-Q+
+---------------------------------------------------------------------------------------------
+MOVE	R1,		C
+MOVE	R2,		B
+MUL		R2 ,		R1
+MOVE	TEMP1, 	R2 
+MOVE	R1,		TEMP1
+MOVE	R2,		A
+ADD		R2 ,		R1
+MOVE	TEMP2, 	R2 
+MOVE	R1,		E
+MOVE	R2,		D
+SUB		R2 ,		R1
+MOVE	TEMP3, 	R2 
+MOVE	R1,		TEMP3
+MOVE	R2,		TEMP2
+DIV		R2 ,		R1
+MOVE	TEMP4, 	R2 
+MOVE	R1,		H
+MOVE	R2,		G
+MUL		R2 ,		R1
+MOVE	TEMP5, 	R2 
+MOVE	R1,		TEMP5
+MOVE	R2,		F
+ADD		R2 ,		R1
+MOVE	TEMP6, 	R2 
+MOVE	R1,		I
+MOVE	R2,		TEMP6
+ADD		R2 ,		R1
+MOVE	TEMP7, 	R2 
+MOVE	R1,		J
+MOVE	R2,		TEMP7
+SUB		R2 ,		R1
+MOVE	TEMP8, 	R2 
+MOVE	R1,		TEMP8
+MOVE	R2,		TEMP4
+SUB		R2 ,		R1
+MOVE	TEMP9, 	R2 
+MOVE	R1,		L
+MOVE	R2,		K
+DIV		R2 ,		R1
+MOVE	TEMP:, 	R2 
+MOVE	R1,		M
+MOVE	R2,		TEMP:
+MUL		R2 ,		R1
+MOVE	TEMP;, 	R2 
+MOVE	R1,		N
+MOVE	R2,		TEMP;
+DIV		R2 ,		R1
+MOVE	TEMP<, 	R2 
+MOVE	R1,		TEMP<
+MOVE	R2,		TEMP9
+SUB		R2 ,		R1
+MOVE	TEMP=, 	R2 
+MOVE	R1,		Q
+MOVE	R2,		TEMP=
+ADD		R2 ,		R1
+MOVE	TEMP>, 	R2 
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+A+B*C=>ABC*+
+---------------------------------------------------------------------------------------------
+MOVE	R1,		C
+MOVE	R2,		B
+MUL		R2 ,		R1
+MOVE	TEMP1, 	R2 
+MOVE	R1,		TEMP1
+MOVE	R2,		A
+ADD		R2 ,		R1
+MOVE	TEMP2, 	R2 
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+B*C=>BC*
+---------------------------------------------------------------------------------------------
+MOVE	R1,		C
+MOVE	R2,		B
+MUL		R2 ,		R1
+MOVE	TEMP1, 	R2 
+---------------------------------------------------------------------------------------------
+
